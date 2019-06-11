@@ -3,7 +3,7 @@ from os import path
 
 # define the bash path to where the ImageNet dataset
 # devkit are stored on disk)
-BASH_PATH = "../datasets/imagenet/ILSVRC2015"
+BASH_PATH = "~/raid/datasets/imagenet/ILSVRC2015"
 
 # based on the bash path, derive the images bash path, image sets
 # path, and devkit path 
@@ -36,7 +36,7 @@ NUM_TEST_IMAGES = 50 * NUM_CLASSES
 
 # define the path to the output training, validation, and testing
 # lists
-MX_OUTPUT = "../datasets/imagenet"
+MX_OUTPUT = "~/raid/datasets/imagenet"
 TRAIN_MX_LIST = path.sep.join([MX_OUTPUT, "lists/train.lst"])
 VAL_MX_LIST = path.sep.join([MX_OUTPUT, "lists/val.lst"])
 TEST_MX_LIST = path.sep.join([MX_OUTPUT, "lists/test.lst"])
