@@ -21,7 +21,7 @@ TRAIN_LIST = path.sep.join([IMAGE_SETS_PATH, "train_cls.txt"])
 
 # define the paths to the validation filenames along with the 
 # file that contains the ground-truth validation labels
-VAL_LIST = path.sep.join([IMAGE_SETS_PATH], "val.txt")
+VAL_LIST = path.sep.join([IMAGE_SETS_PATH, "val.txt"])
 VAL_LABELS = path.sep.join([DEVKIT_PATH,
     "ILSVRC2015_clsloc_validation_ground_truth.txt"])
 
@@ -52,4 +52,4 @@ DATASET_MEAN = "output/imagenet_mean.json"
 
 # define the batch size and number of devices used for training
 BATCH_SIZE = 128
-NUM_DEVICES = 8
+NUM_DEVICES = 1
